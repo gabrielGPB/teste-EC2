@@ -15,7 +15,7 @@ else
         echo "Cliente não possui java instalado"
 
 fi
-java -version
+java --version
 if [ $? -eq 0 ];
 then
         echo "java instalado"
@@ -33,10 +33,9 @@ then
 
         else
         echo "instalando projeto via terminal..."
-                 cd ..
-                 cd git clone https://github.com/victxrfreitas/DYOUNG.git
+                 
+                 git clone https://github.com/victxrfreitas/DYOUNG.git
         echo "Iniciando aplicação..."
-                 cd ..
                  cd DYOUNG/dyoung-project-cmd/target/dyoung-project-cmd-1.0-SNAPSHOT-jar-with-dependencies.jar
         fi
 
@@ -63,10 +62,10 @@ else
 
         else
         echo "instalando projeto via terminal..."
-                 cd ..
-                 cd /home/ubuntu/Desktop && git clone https://github.com/victxrfreitas/DYOUNG.git
+                
+                git clone https://github.com/victxrfreitas/DYOUNG.git
         echo "Iniciando aplicação..."
-                 cd ..
+
                  cd DYOUNG/dyoung-project-cmd/target/dyoung-project-cmd-1.0-SNAPSHOT-jar-with-dependencies.jar
         fi
 
