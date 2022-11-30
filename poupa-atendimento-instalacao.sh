@@ -1,6 +1,12 @@
 #!/bin/bash
 sudo apt update && sudo apt upgrade
 
+sleep 3
+
+sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
+
+sleep 3
+
 VERSION="$(java -version 2>&1 | grep version | cut -d'"' -f2)"
 if [ "${VERSION}" ];
 then
