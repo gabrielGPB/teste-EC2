@@ -25,14 +25,34 @@ then
         if [ \"$instone\" == \"s\" ];
         then
         echo "instalando projeto via interface..."
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
                  cd /home/ubuntu/Desktop && git clone https://github.com/victxrfreitas/DYOUNG.git
         echo "Iniciando aplicação..."
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
                  cd DYOUNG/Java swing login/dyoung-project/target/dyoung-project-1.0-SNAPSHOT-jar-with-dependencies.jar
 
         else
         echo "instalando projeto via terminal..."
-                 git clone https://github.com/victxrfreitas/DYOUNG.git
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd git clone https://github.com/victxrfreitas/DYOUNG.git
         echo "Iniciando aplicação..."
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
                  cd DYOUNG/dyoung-project-cmd/target/dyoung-project-cmd-1.0-SNAPSHOT-jar-with-dependencies.jar
         fi
 
@@ -50,14 +70,34 @@ else
         if [ \"$instone\" == \"s\" ];
         then
         echo "instalando projeto via interface..."
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
                  cd /home/ubuntu/Desktop && git clone https://github.com/victxrfreitas/DYOUNG.git
         echo "Iniciando aplicação..."
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
                  cd DYOUNG/Java swing login/dyoung-project/target/dyoung-project-1.0-SNAPSHOT-jar-with-dependencies.jar
 
         else
         echo "instalando projeto via terminal..."
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
                  cd /home/ubuntu/Desktop && git clone https://github.com/victxrfreitas/DYOUNG.git
         echo "Iniciando aplicação..."
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
+                 cd ..
                  cd DYOUNG/dyoung-project-cmd/target/dyoung-project-cmd-1.0-SNAPSHOT-jar-with-dependencies.jar
         fi
 
