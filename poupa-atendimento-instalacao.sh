@@ -1,4 +1,7 @@
 #!/bin/bash
+
+cd ..
+
 sudo apt update && sudo apt upgrade
 
 sleep 3
