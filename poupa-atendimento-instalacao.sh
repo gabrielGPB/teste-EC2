@@ -43,10 +43,10 @@ then
         if [ \"$instone\" == \"s\" ];
         then
         echo "instalando projeto via interface..."
-                 cd ..
+                 
                  cd /home/ubuntu/Desktop && git clone https://github.com/victxrfreitas/dyoung-ppa.git
         echo "Iniciando aplicação..."
-                 cd ..
+                 
                  cd DYOUNG/Java swing login/dyoung-project/target/dyoung-project-1.0-SNAPSHOT-jar-with-dependencies.jar
 
         else
@@ -71,11 +71,11 @@ else
         if [ \"$instone\" == \"s\" ];
         then
         echo "instalando projeto via interface..."
-                 cd ..
+                 
                  cd /home/ubuntu/Desktop && https://github.com/victxrfreitas/dyoung-ppa.git
         echo "Iniciando aplicação..."
 
-                 cd ..
+                 
                  cd DYOUNG/Java swing login/dyoung-project/target/dyoung-project-1.0-SNAPSHOT-jar-with-dependencies.jar
 
         else
