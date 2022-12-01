@@ -7,6 +7,21 @@ sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
 
 sleep 3
 
+sudo apt-get install docker.io -y
+sudo systemctl start docker 
+sudo systemctl enable docker
+sudo docker pull mysql:5.7
+sudo docker images
+cd /home/ubuntu/teste-EC2
+sudo docker build -t dockerfile .
+sudo docker run -d -p 3306:3306 --name DyoungDB -e MYSQL_ROOT_PASSWORD=Gfgrupo6 -e MYSQL_DATABASE=dyoung mysql:5.7
+sudo docker start DyoungDB
+sudo docker exec -it DyoungDB bash
+mysql -u root -p
+sleep 4
+clear
+
+
 VERSION="$(java -version 2>&1 | grep version | cut -d'"' -f2)"
 if [ "${VERSION}" ];
 then
@@ -26,7 +41,7 @@ then
         then
         echo "instalando projeto via interface..."
                  cd ..
-                 cd /home/ubuntu/Desktop && git clone https://github.com/victxrfreitas/DYOUNG.git
+                 cd /home/ubuntu/Desktop && git clone https://github.com/victxrfreitas/dyoung-ppa.git
         echo "Iniciando aplicação..."
                  cd ..
                  cd DYOUNG/Java swing login/dyoung-project/target/dyoung-project-1.0-SNAPSHOT-jar-with-dependencies.jar
@@ -34,7 +49,7 @@ then
         else
         echo "instalando projeto via terminal..."
                  
-                 git clone https://github.com/victxrfreitas/DYOUNG.git
+                 git clone https://github.com/victxrfreitas/dyoung-ppa.git
         echo "Iniciando aplicação..."
                  cd DYOUNG/dyoung-project-cmd/target/dyoung-project-cmd-1.0-SNAPSHOT-jar-with-dependencies.jar
         fi
@@ -54,7 +69,7 @@ else
         then
         echo "instalando projeto via interface..."
                  cd ..
-                 cd /home/ubuntu/Desktop && git clone https://github.com/victxrfreitas/DYOUNG.git
+                 cd /home/ubuntu/Desktop && https://github.com/victxrfreitas/dyoung-ppa.git
         echo "Iniciando aplicação..."
 
                  cd ..
@@ -63,7 +78,7 @@ else
         else
         echo "instalando projeto via terminal..."
                 
-                git clone https://github.com/victxrfreitas/DYOUNG.git
+                git clone https://github.com/victxrfreitas/dyoung-ppa.git
         echo "Iniciando aplicação..."
 
                  cd DYOUNG/dyoung-project-cmd/target/dyoung-project-cmd-1.0-SNAPSHOT-jar-with-dependencies.jar
